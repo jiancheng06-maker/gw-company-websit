@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+/* Custom Styles */
+:root {
+    --primary-color: #004085; /* Darker blue */
+    --secondary-color: #0056b3; /* Original blue for accents */
+    --text-color: #333;
+    --light-bg: #f8f9fa;
+    --dark-bg: #343a40;
+}
+
+body {
+    font-family: 'Roboto', 'Helvetica Neue', 'Microsoft JhengHei', 'Heiti TC', sans-serif;
+    color: var(--text-color);
+    font-size: 0.95rem; /* Slightly smaller base font size */
+}
+
+.hero-section {
+    padding: 6rem 0;
+    background-color: var(--dark-bg); /* Dark background for hero */
+}
+
+.hero-section h1 {
+    font-weight: 700;
+}
+
+.navbar {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: var(--primary-color) !important;
+}
+
+.navbar-brand img:hover {
+    cursor: pointer;
+}
+
+.nav-link {
+    color: var(--text-color) !important;
+}
+
+.nav-link:hover {
+    color: var(--secondary-color) !important;
+}
+
+.nav-link.active {
+    color: var(--primary-color) !important;
+    font-weight: 500;
+}
+
+.footer {
+    padding: 2rem 0;
+    background-color: var(--dark-bg);
+    color: #fff;
+}
+
+.card-title {
+    color: var(--primary-color);
+}
+
+.card-text, .list-group-item p {
+    line-height: 1.6;
+    color: var(--text-color); /* Use text color variable */
+    font-size: 0.9rem; /* Slightly smaller for descriptions */
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+}
+
+/* Carousel Controls Styling */
+.carousel-control-prev,
+.carousel-control-next {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    width: 5%; /* Make clickable area a bit wider */
+    background-color: rgba(0, 0, 0, 0.3); /* Semi-transparent background */
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    opacity: 1;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 2rem; /* Increase icon size */
+    height: 2rem;
+}
+
+/* Google Translate Element Styling */
+#google_translate_element {
+    margin-left: 15px; /* Add some space from other nav items */
+}
+
+#google_translate_element .goog-te-gadget-simple {
+    border: none !important;
+    background-color: transparent !important;
+    padding: 0 !important;
+}
+
+#google_translate_element .goog-te-gadget-simple .goog-te-menu-value {
+    color: var(--text-color) !important; /* Use text color variable */
+    font-weight: bold;
+    padding: 0 !important;
+}
+
+#google_translate_element .goog-te-gadget-simple .goog-te-menu-value span {
+    border: none !important;
+    vertical-align: middle !important;
+}
+
+#google_translate_element .goog-te-gadget-simple .goog-te-menu-value span:nth-child(2) {
+    display: none; /* Hide the default Google Translate text */
+}
+
+#google_translate_element .goog-te-gadget-simple .goog-te-menu-value span:nth-child(3) {
+    vertical-align: middle !important;
+}
+
+#google_translate_element .goog-te-gadget-simple .goog-te-menu-value img {
+    display: none; /* Hide the Google Translate icon */
+}
+
+/* Style the dropdown arrow */
+#google_translate_element .goog-te-gadget-simple .goog-te-menu-value::after {
+    content: '\f0d7'; /* Font Awesome caret-down icon */
+    font-family: "Font Awesome 5 Free"; /* Assuming Font Awesome is loaded */
+    font-weight: 900;
+    margin-left: 5px;
+    vertical-align: middle;
+}
+
+/* Adjust the dropdown menu itself */
+.goog-te-menu-frame {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 0.25rem;
+    overflow: hidden;
+}
+
+.goog-te-menu2 {
+    font-family: 'Roboto', 'Helvetica Neue', 'Microsoft JhengHei', 'Heiti TC', sans-serif;
+    font-size: 1rem;
+}
+
+.goog-te-menu2-item div, .goog-te-menu2-item:link div, .goog-te-menu2-item:visited div, .goog-te-menu2-item:active div {
+    padding: 8px 15px;
+    color: var(--text-color);
+}
+
+.goog-te-menu2-item:hover div {
+    background-color: #e9ecef;
+    color: var(--text-color);
+}
+
+main {
+    min-height: calc(100vh - 56px - 72px); /* Adjust based on actual header/footer height */
+}
+
+.section-heading-small {
+    font-size: 1.75rem; /* Equivalent to h3 size in Bootstrap */
+    font-weight: 500;
+}
+
+/* Table adjustments */
+.table th,
+.table td {
+    font-size: 0.9rem; /* Slightly smaller font for table content */
+    padding: 0.5rem; /* Reduce padding */
+}
